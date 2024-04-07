@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.input_css{
+    width: 560px;
+height: 40px;
+gap: 0px;
+border-radius: 4px ;
+opacity: 0px;
+background: #ffffff;
+color: black;
+border: 2px solid #479BFF;
+margin-bottom: 10px;
+}
+
+.border-date{
+    border:1px solid #479BFF;
+    border-radius:4px 0px 0px 4px;
+}
+.date-add2{
+    height: 40px;
+    border:2px solid #479BFF;
+    border-radius:4px 0px 0px 4px;
+    border-right: none;  
+}
+.date-add3{
+    height: 40px;
+    border:2px solid #479BFF;   
+    border-right: none;
+}
+.date-add4{
+    height: 40px;
+    border:2px solid #479BFF;
+    border-radius:0px 4px 4px 0px;
+}
+.custom-file-upload {   
+    display: inline-block;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color:#479BFF;    
+} 
+  .custom-file-upload:hover {
+    background-color: #e0e0e0;
+  }
+
+  .img-date{
+    width: 36px;
+    height: 23px;
+    margin:0.5rem;
+  }
+  
+
+.nextBt{
+    margin-top: 40px;
+    width: 130px;
+    height: 40px;
+    background-color:#479BFF;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.btn-section{
+    position: absolute;
+    left: 50%;
+}
+.form1{
+    left: 100px;
+    top: 200px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.skills-form {
+    font-weight: bold;  
+       
+}
+
+.section1{
+    margin-left: 40px;
+}
+.section2{
+    margin-left: 67px;
+}
+.input_section2{
+    width: 590px;
+height: 40px;
+gap: 0px;
+border-radius: 4px ;
+opacity: 0px;
+background: #ffffff;
+color: black;
+border: 2px solid #479BFF;
+ margin-bottom: 10px;
+}
+
+.dropdown_section2{ 
+    width: 590px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 4px ;
+    opacity: 0px;
+    background: #ffffff;
+    color: black;
+    border: 2px solid #479BFF;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 700px )  {
+    .skills-form{
+        width: 100%;
+        position: none;
+        
+        flex: none;
+    }
+    .img_section{
+        width: 100%;
+        text-align: center;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .img_note{
+       margin-left: 30px;
+       margin-top: 7px;
+       font-size: 12px;
+    }
+
+    .form1{
+        left: 40px;
+        top: 10px;    
+        flex-direction: column;
+         
+    }
+    .section1{
+        width: 100%;
+        margin-left:20px ;
+    }
+    .section2{
+        flex: none;
+        margin-left: 20px;
+       
+    }
+    .input_css{
+        width: 43vh;
+    height: 20px;
+    gap: 0px;
+    border-radius: 4px ;
+    opacity: 0px;
+    background: #ffffff;
+    color: black;
+    border: 0.6px solid #00000071;
+    
+    }
+    .border-date{
+        border:0.6px solid #00000071;
+        border-radius:4px 0px 0px 4px;
+    }
+    .date-add2{
+        height: 20px;
+        border:0.6px solid #00000071;
+        border-radius:4px 0px 0px 4px;
+        border-right: none;
+        width: 10vh;
+    }
+    .date-add3{
+        height: 25px;
+        border:0.6px solid #00000071;   
+        border-right: none;
+        width:11vh
+    }
+    .date-add4{
+        height: 25px;
+        border:0.6px solid #00000071;
+        border-radius:0px 4px 4px 0px;
+        width:11vh
+    }
+    .date_input{
+        
+        height: 25px;
+    }
+    .img-date{
+        height: 15px;
+        padding-left: 0;
+    }
+    .nextBt{
+        position: none;
+         margin-top: 20px;
+         width: 70px;
+         height: 30px;
+         background-color: #00DE93;
+        border: none;
+         border-radius: 4px;
+         color: #ffffff;
+         font-size: 13px;    
+         margin-bottom: 10px;   
+     }
+
+     .input_section2{
+        width: 43vh;
+        height: 20px;
+        gap: 0px;
+        border-radius: 4px ;
+        opacity: 0px;
+        background: #ffffff;
+        color: black;
+        border: 0.6px solid #00000071;        
+     }
+     .skills-form label{
+        font-size: 11.5px;
+        font-weight: 900;
+    }
+    .dropdown_section2{
+        width: 43vh;
+        height: 20px;
+        gap: 0px;
+        border-radius: 4px ;
+        opacity: 0px;
+        background: #ffffff;
+        color: black;
+        border: 0.6px solid #00000071;   
+    }
+    .btn-section{
+        position: absolute;
+        left: 40%;
+    }
+   
+}

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes,Route } from "react-router-dom";
+import SignIN from "./components/loginDetails/SignIn/signIn";
+import SignUp from "./components/loginDetails/SignUp/signup";
+import SkillDetail from "./components/loginDetails/SkillsDetails/skillsDetails";
+import OthersDetails from "./components/loginDetails/Othersdetails/othersDetails";
+import Assignment from "./components/loginDetails/AssignmentDetails/assignment";
+import ChatWAdvct from "./components/advocatesChat/chatwithAvct";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+{/* <Routes>
+    <Route path='/signIn' element={<SignIN/>}/>
+   <Route path="/signup" element={<SignUp/>} />
+    <Route path="/skillsDetails" element={<SkillDetail/>}/>
+    <Route path="/othersDetails" element={<OthersDetails/>}/>
+    <Route path='/assignment' element={<Assignment/>}/>
+    <Route path='/chatwithAvct' element={<ChatWAdvct/>} />
+</Routes>  */}
+{/* <ChatWAdvct/> */}
+    </>
   );
 }
 
