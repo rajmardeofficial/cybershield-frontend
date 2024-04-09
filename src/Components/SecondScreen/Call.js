@@ -1,6 +1,6 @@
-import './chatadvt.css'
-import AdcvtCard from './advctCard';
-const ChatWAdvct=()=>{
+import './Call.css'
+import CallCard from './CallCard';
+const Call=()=>{
     
     const advctList = [
         { id: 1, name: "Samri Thakur", image: "./advct.jpg", education: "Information Security, Compliance Management", language: "English, Hindi, Marathi", price: "5/min",tick:true },
@@ -42,4 +42,4 @@ const ChatWAdvct=()=>{
     </>)
 }
 
-export default ChatWAdvct;
+export default Call;

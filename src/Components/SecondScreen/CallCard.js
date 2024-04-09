@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const AdcvtCard=({advctName,advctImg,advctEdu,advctLang,advctPrice,tick})=>{
+const CallCard=({advctName,advctImg,advctEdu,advctLang,advctPrice,tick})=>{
     const [bluetick,setBlueTick]=useState(false)
    
     return(<>
@@ -33,4 +33,4 @@ const AdcvtCard=({advctName,advctImg,advctEdu,advctLang,advctPrice,tick})=>{
     </>)
 }
 
-export default AdcvtCard;
+export default CallCard;

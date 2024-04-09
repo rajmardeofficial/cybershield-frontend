@@ -4,7 +4,7 @@ import GreenComp from './Components/FirstScreen/GreenComp/GreenComp';
 import GreyComp from './Components/FirstScreen/GreyComp/GreyComp';
 import BlueComp from './Components/FirstScreen/BlueComp/BlueComp';
 import Cara from './Components/FirstScreen/Carousel/Cara';
-import ChatWAdvct from './Components/FirstScreen/SecondScreen/chatwithAvct';
+import ChatWAdvct from './Components/FirstScreen/SecondScreen/Call';
 function App() {
   return (
     <>
