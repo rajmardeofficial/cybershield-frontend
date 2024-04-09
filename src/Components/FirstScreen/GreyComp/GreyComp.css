@@ -1,0 +1,27 @@
+.containerbloc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wrap items to next row if necessary */
+  }
+  
+  .greyblock {
+    flex: 0 0 23%; /* Set initial width of each block */
+    margin-bottom: 20px;
+    text-align: center;
+    background: #D9D9D966;
+
+  }
+  
+  .greyblock img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .greytext {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  

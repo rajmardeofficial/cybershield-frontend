@@ -1,0 +1,88 @@
+.frame-child3 {
+    width: 338.3px;
+    height: 470px;
+    position: relative;
+    border-radius: 44.51px;
+    background-color: rgba(25, 131, 255, 0.25);
+    display: none;
+    max-width: 100%;
+  }
+  .image-5-icon {
+    height: 178px;
+    width: 178px;
+    position: relative;
+    border-radius: 86.62px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .image-5-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 33px;
+  }
+  .criminal-law,
+  .davis-anderson {
+    position: relative;
+    z-index: 1;
+  }
+  .criminal-law-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 36px 0 36.5px;
+    font-size: 29.5px;
+  }
+  .davis-anderson-parent,
+  .rectangle-parent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .davis-anderson-parent {
+    align-self: stretch;
+    gap: 16px;
+  }
+  .rectangle-parent2 {
+    flex: 1;
+    border-radius: 44.51px;
+    background-color: rgba(25, 131, 255, 0.25);
+    padding: 88.1px 47.1px 86.2px;
+    box-sizing: border-box;
+    gap: 27.7px;
+    min-width: 264px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 34.6px;
+    color: #000;
+    font-family: Ubuntu;
+  }
+  @media screen and (max-width: 900px) {
+    .davis-anderson {
+      font-size: 28px;
+    }
+    .rectangle-parent2 {
+      padding-top: 57px;
+      padding-bottom: 56px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .davis-anderson {
+      font-size: 21px;
+    }
+    .criminal-law {
+      font-size: 24px;
+    }
+    .rectangle-parent2 {
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  }
+  
