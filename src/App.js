@@ -5,18 +5,19 @@ import SkillDetail from "./components/loginDetails/SkillsDetails/skillsDetails";
 import OthersDetails from "./components/loginDetails/Othersdetails/othersDetails";
 import Assignment from "./components/loginDetails/AssignmentDetails/assignment";
 import ChatWAdvct from "./components/advocatesChat/chatwithAvct";
+import UserChat from "./components/user chat/userchat";
 function App() {
   return (
     <>
-{/* <Routes>
+ <Routes>
     <Route path='/signIn' element={<SignIN/>}/>
    <Route path="/signup" element={<SignUp/>} />
     <Route path="/skillsDetails" element={<SkillDetail/>}/>
     <Route path="/othersDetails" element={<OthersDetails/>}/>
     <Route path='/assignment' element={<Assignment/>}/>
     <Route path='/chatwithAvct' element={<ChatWAdvct/>} />
-</Routes>  */}
-{/* <ChatWAdvct/> */}
+</Routes>  
+{/*  <UserChat/>  */}
     </>
   );
 }
