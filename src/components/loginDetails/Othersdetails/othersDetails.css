@@ -1,0 +1,111 @@
+.othersdetailsform label{
+    margin-top: 5px;
+    font-weight: bolder;
+}
+.othersdetailsform{
+    margin-left:200px;
+}
+ .input_css2{
+    width: 600px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 4px ;
+    opacity: 0px;
+    background: #ffffff;
+    color: black;
+    border: 2px solid #479BFF;
+    margin-bottom: 10px;
+}
+.section1_other{
+    margin-left: 10px;
+    margin-right: 60px;
+}
+.text_area{
+    border: 2px solid #479BFF;
+    border-radius: 4px ;
+    width: 600px;
+}
+
+.next-back{
+    left: 600px;
+    position: absolute;   
+}
+.next-back button{
+    border:none;
+    border-radius: 4px; 
+    padding: 2px;
+    width: 156px;
+    font-size: 25px;
+    height: 44px;
+}
+.nextBt2{   
+    background-color: #479BFF;
+    color: #ffffff;    
+    margin-left: 10px;
+}
+
+.backBt{
+    background-color: #000000;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+@media (max-width: 700px )  {
+
+    .othersdetailsform{
+        flex-direction: column;
+    }
+    .section1_other{
+        margin-left: -40px;
+        margin-right: -20px;
+    }
+
+    .input_css2{
+        width: 70vw;
+        height: 2.9vh;
+        gap: 0px;
+        border-radius: 2px ;
+        opacity: 0px;
+        background: #ffffff;
+        color: black;
+        border: 0.6px solid #00000071;   
+    }
+    .text_area{
+        border: 0.6px solid #00000071;   
+        border-radius: 2px ;
+        width: 65vw;
+    }
+    .othersdetailsform label{
+        margin-top: 5px;
+        font-weight: bolder;
+        font-size: 13px;
+       
+    }
+    .section2_others{
+        margin-left: -40px;
+    }
+    .nextBt2{   
+        background-color:  #00DE93;
+        color: #ffffff;    
+        margin-left: 10px;
+    }
+    
+    .backBt{
+        background-color: #000000;
+        color: #ffffff;
+        margin-right: 10px;
+    }
+    .next-back{
+        left:10vh;
+        position: absolute;   
+        margin-bottom: 10px;
+    }
+    .next-back button{
+        border:none;
+        border-radius: 4px; 
+        padding: 2px;
+        width: 25vw;
+        font-size: 15px;
+        height: 28px;
+    }
+}

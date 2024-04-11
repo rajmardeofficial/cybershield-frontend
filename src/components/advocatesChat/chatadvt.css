@@ -1,0 +1,103 @@
+.sortsearch_section button, p{
+
+    border-radius: 6px;   
+    font-weight: bold;
+}
+.sortsearch_section{
+    position: relative;
+    
+}
+.chat_advtBt{
+ border: none;
+ background-color: #479BFF;
+ color: #ffff;
+ padding: 1rem;
+ padding-bottom: 2rem;
+ word-break: break-all;
+ position: absolute;
+ left:10%;
+ height:2rem;
+}
+
+.sortsearch_section p{
+    position: absolute;
+    left:25%;
+    font-size: 1.5rem;
+}
+
+.Rech_filt_sort{
+    position: absolute;
+    left:45%;  
+}
+.rechargeBt{
+    color: #479BFF;
+    border:1px solid  #479BFF;
+    background-color: #ffff;
+    height:2.8rem; 
+    padding: 10px;
+    width:7rem;
+   
+}
+.sortByBt, .filterBt{
+    width:7rem;
+    background-color: #ffff;
+    height:2.8rem; 
+    padding: 10px;
+    border:1px solid  #06080a;
+}
+
+.search_name{
+    width:12rem;
+    background-color: #ffff;
+    height:2.8rem; 
+    padding: 10px;
+    border: none;
+   margin-right: 10px;
+}
+.sortsearch_section input::placeholder{
+    width: min-content;
+}
+.search_bar{
+    border:1px solid  #06080a;
+    border-radius: 5px;   
+}
+
+.chatBt{
+    border:1px solid #479BFF;
+    background-color: #ffff;
+    border-radius: 4px;
+    height: 2rem;
+    width:4rem;
+}
+
+.adcvts_section{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.adct_card{
+    text-align: center;
+    margin: 2%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    height:25rem ;
+    width: 20rem;
+    border-radius: 8px;
+    position: relative;
+}
+.advctimg_size{
+    width:40%;
+    height: 40%;
+   
+}
+.charge_chatbt{
+    display:inline-flex;
+}
+.blueTick{
+    position: absolute;
+  
+}
