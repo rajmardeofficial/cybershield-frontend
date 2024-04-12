@@ -1,10 +1,10 @@
 import React from 'react';
-import NavBarComp from './Components/FirstScreen/NavBarComp/NavBarComp';
-import GreenComp from './Components/FirstScreen/GreenComp/GreenComp';
-import GreyComp from './Components/FirstScreen/GreyComp/GreyComp';
-import BlueComp from './Components/FirstScreen/BlueComp/BlueComp';
-import Cara from './Components/FirstScreen/Carousel/Cara';
-import ChatWAdvct from './Components/FirstScreen/SecondScreen/Call';
+import NavBarComp from './components/FirstScreen/NavBarComp/NavBarComp';
+import GreenComp from './components/FirstScreen/GreenComp/GreenComp';
+import GreyComp from './components/FirstScreen/GreyComp/GreyComp';
+import BlueComp from './components/FirstScreen/BlueComp/BlueComp';
+import Cara from './components/FirstScreen/Carousel/Cara';
+// import ChatWAdvct from './Components/FirstScreen/SecondScreen/Call';
 function App() {
   return (
     <>

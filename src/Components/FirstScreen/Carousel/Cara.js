@@ -10,21 +10,19 @@ const Cara = () => {
         { width: 1200, itemsToShow: 4 },
     ];
 
-    const CustomRightArrow = ({ onClick, ...rest }) => {
-        const {
-            onMove,
-            carouselState: { currentSlide, deviceType }
-        } = rest;
-        // onMove means if dragging or swiping in progress.
-        return <button onClick={() => onClick()} style={{ backgroundColor: "white", color: "grey" }}>Next</button>;
-    };
+
+    
     
     return (
         <>
             <div style={{ backgroundColor: "#F0F0F0", height: "500px" }}>
                 <h1 style={{ textAlign: "center", color: "#0051FF" }}>Our Advocates</h1>
                 <div className="App">
-                    <Carousel breakPoints={breakPoints} pagination={false} customRightArrow={<CustomRightArrow />}>
+                    <Carousel breakPoints={breakPoints} pagination={false} renderArrow={({ type, onClick }) => {
+                        const arrowType = type === "PREV" ? "prev" : "next";
+                        const src = arrowType === "prev" ? "../arrowleft.svg" : "../arrowright.svg"; // Assuming you have arrowRight.svg as well
+                        return <img src={src} alt={`Arrow ${arrowType}`} onClick={onClick} style={{cursor:"pointer"}}/>;
+                    }}>
                         <div className='cards'>
                             <img src='../image-2-1@2x.png' alt='Profile' className='profile-image' />
                             <h3>Thomas Bailey</h3>
