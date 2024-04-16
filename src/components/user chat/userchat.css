@@ -1,0 +1,89 @@
+.MainchatSection{
+    display: flex;
+    
+    
+}
+.contacts_Section{
+    width: 30%;
+    background-color: #BADAFF;
+    position: relative;
+}
+.settingIcon{
+    width:1rem;
+    height:1rem;
+    right: 6%;
+    position: absolute;
+    top:6%;
+    width: 1rem;
+    height: 2rem;
+}
+.search_contact{
+    padding: 10px;
+}
+.search_contact input{
+    border:1px solid  #479BFF;
+    width: 30rem;
+    height: 2rem;
+    border-radius: 4px;
+
+}
+.userimage{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: aliceblue;
+}
+
+.bg-userimg{
+   
+    border-radius:100% ;
+    width: 4.9rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.contact_img{
+    background-color: aliceblue;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    margin: 4px;
+    margin-left: 10px;
+    padding: 4px;
+
+}
+
+.chat-section{
+    position: relative;
+}
+
+.chat_type_section{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: #BADAFF;
+}
+.chat_type_section input{
+    width: 23rem;
+    border: 0;
+    left: 0;
+    padding:10px;
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+
+.chat_type_section img{
+    margin-right: 1rem;
+}
+.contact_onchat{
+    background-color: #BADAFF;
+    height: 8rem;
+}
+.profile_section{
+    border:1px solid gray ;
+    border-bottom: none;
+    border-top: none;
+    display: flex;
+    padding: 21px;
+}

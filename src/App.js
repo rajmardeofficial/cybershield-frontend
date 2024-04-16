@@ -1,29 +1,30 @@
-import React from 'react';
-import NavBarComp from './components/FirstScreen/NavBarComp/NavBarComp';
-import GreenComp from './components/FirstScreen/GreenComp/GreenComp';
-import GreyComp from './components/FirstScreen/GreyComp/GreyComp';
-import BlueComp from './components/FirstScreen/BlueComp/BlueComp';
-import Cara from './components/FirstScreen/Carousel/Cara';
 
+import { Routes,Route } from "react-router-dom";
+import SignIN from "./components/loginDetails/SignIn/signIn";
+import SignUp from "./components/loginDetails/SignUp/signup";
+import SkillDetail from "./components/loginDetails/SkillsDetails/skillsDetails";
+import OthersDetails from "./components/loginDetails/Othersdetails/othersDetails";
+import Assignment from "./components/loginDetails/AssignmentDetails/assignment";
+import ChatWAdvct from "./components/advocatesChat/chatwithAvct";
+import UserChat from "./components/user chat/userchat";
+import Home from "./Pages/Home";
+import Cardpg from "./Pages/Cardpg";
 function App() {
   return (
     <>
-      
-        <NavBarComp />
-      
-      <div style={{ marginTop:"1.5%", marginBottom: '20px' }}>
-        <GreenComp />
-      </div>
-      <div style={{ marginBottom: '20px', width: '90%', marginLeft: '5%' }}>
-        <GreyComp />
-      </div>
-      <div style={{ marginBottom: '20px' }}>
-        <BlueComp />
-      </div>
-      <Cara />
-      
-    </>
-  );
-}
+ <Routes>
+    <Route path="/" element={ <Home />} />
+    <Route path="cardpg" element={ <Cardpg/>} />  
+    <Route path='/signIn' element={<SignIN/>}/>
+   <Route path="/signup" element={<SignUp/>} />
+    <Route path="/skillsDetails" element={<SkillDetail/>}/>
+    <Route path="/othersDetails" element={<OthersDetails/>}/>
+    <Route path='/assignment' element={<Assignment/>}/>
+    <Route path='/chatwithAvct' element={<ChatWAdvct/>} />
+   
+</Routes>  
 
+    </>
+  )
+}
 export default App;

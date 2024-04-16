@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import './App.css'
+import './DashBoard.css'
 import Header from './Header'
-import Home from './Home'
+
 import { Container, Divider } from 'semantic-ui-react'
 import Blog from './Blog'
-import LineChart from './LineChart'
-import Sidebar from './SideBar'
+import Sidebar from './Sidebar'
+
+
+
 function DashBoard() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
 
@@ -15,7 +17,7 @@ function DashBoard() {
 
   return (
     <div className='grid-container'>
-        
+        <Sidebar/>
       <Header OpenSidebar={OpenSidebar}/>
       <div style={{display:"flex",flexDirection:"column"}}>
       <Container style={{

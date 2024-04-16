@@ -11,6 +11,8 @@
 # production
 /build
 
+userchat.js
+userchat.css
 # misc
 .DS_Store
 .env.local
