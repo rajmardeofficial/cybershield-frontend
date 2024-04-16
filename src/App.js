@@ -4,7 +4,7 @@ import GreenComp from './components/FirstScreen/GreenComp/GreenComp';
 import GreyComp from './components/FirstScreen/GreyComp/GreyComp';
 import BlueComp from './components/FirstScreen/BlueComp/BlueComp';
 import Cara from './components/FirstScreen/Carousel/Cara';
-// import ChatWAdvct from './Components/FirstScreen/SecondScreen/Call';
+
 function App() {
   return (
     <>
@@ -21,7 +21,7 @@ function App() {
         <BlueComp />
       </div>
       <Cara />
-      {/* <ChatWAdvct/> */}
+      
     </>
   );
 }

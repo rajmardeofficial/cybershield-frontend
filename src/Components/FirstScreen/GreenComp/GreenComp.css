@@ -93,7 +93,7 @@
   .cyber-tip-of-container {
     align-self: stretch;
     position: relative;
-    z-index: 2;
+    z-index: 0;
   }
   .button-child {
     height: 67px;
@@ -209,4 +209,35 @@
       box-sizing: border-box;
     }
   }
+  @media screen and (max-width: 1275px) {
+    .image-2-icon {
+      width: 300px; /* Adjust width as needed */
+      left: -65px; /* Adjust left position */
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cyber-tip-of {
+      font-size: 40px;
+    }
+    .rectangle-group {
+      gap: 17px 35px;
+      padding-left: 40px; /* Adjust padding as needed */
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .cyber-tip-of {
+      font-size: 30px;
+    }
+    .cyber-tip-of-container {
+      font-size: 16px;
+    }
+    .rectangle-group {
+      padding-left: 20px;
+      padding-top: 24px;
+      padding-bottom: 20px;
+    }
+  }
+  
   
