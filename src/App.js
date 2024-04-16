@@ -9,6 +9,7 @@ import ChatWAdvct from "./components/advocatesChat/chatwithAvct";
 import UserChat from "./components/user chat/userchat";
 import Home from "./Pages/Home";
 import Cardpg from "./Pages/Cardpg";
+import DashBoard from "./components/DashBoard/DashBoard";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
     <Route path="/othersDetails" element={<OthersDetails/>}/>
     <Route path='/assignment' element={<Assignment/>}/>
     <Route path='/chatwithAvct' element={<ChatWAdvct/>} />
+    <Route path="/DashBoard" element={<DashBoard/>}/>
    
 </Routes>  
 
