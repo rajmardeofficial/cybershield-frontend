@@ -6,12 +6,11 @@ import ChatBotpg from "./Pages/ChatBotpg";
 
 function App() {
   return (
-    // Add routes here
-    // <Routes>
-    // <Route path="/" element={ <Home />} />
-    // <Route path="cardpg" element={ <Cardpg/>} />
-    // <Route path="chatbot" element={ <ChatBotpg/>} />
-    // </Routes>
+    <Routes>
+    <Route path="/" element={ <Home />} />
+    <Route path="cardpg" element={ <Cardpg/>} />
+    <Route path="chatbot" element={ <ChatBotpg/>} />
+    </Routes>
   );
 }
 
