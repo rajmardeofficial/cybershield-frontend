@@ -1,14 +1,34 @@
 import React, { useState } from "react";
-import Modal from "react-bootstrap/Modal";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { BsX } from "react-icons/bs"; // Importing the close icon from react-icons/bs
 
 const ChatBot = () => {
-  const [show, setShow] = useState(false);
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState([]);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const sendMessage = async () => {
+    try {
+      // Update UI with user's message
+      setResponse(prevResponse => [...prevResponse, { message, type: 'sent' }]);
+      
+      // Send request to backend
+      const response = await fetch("http://localhost:8000/getResponse", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ promptG: message }),
+      });
+      
+      // Handle response from backend
+      const data = await response.json();
+      setResponse(prevResponse => [...prevResponse, { message: data.response, type: 'received' }]);
+      
+      // Clear input field
+      setMessage("");
+    } catch (error) {
+      console.error("Error sending message:", error);
+    }
+  };
 
   return (
     <div
@@ -22,9 +42,9 @@ const ChatBot = () => {
       }}
     >
       <div style={{ position: "absolute", top: 0, right: 16, margin: "10px" }}>
-        <img src="chatbot_images/x_mark.png"  width='32px' height='32px'/>
+        <img src="chatbot_images/x_mark.png" width="32px" height="32px" />
       </div>
-      <Card style={{ backgroundColor: "#479BFF", width: "98%", height: "90%", marginTop:'32px' }}>
+      <Card style={{ backgroundColor: "#479BFF", width: "98%", height: "90%", marginTop: "32px" }}>
         <Card.Body style={{ display: "flex", justifyContent: "space-between" }}>
           <div>
             <img
@@ -42,39 +62,28 @@ const ChatBot = () => {
               height="100px"
               style={{ marginLeft: "18px" }}
             />{" "}
-            <span style={{ fontSize: "26px", fontWeight: "500" }}>
-              Chat with Bot
-            </span>
+            <span style={{ fontSize: "26px", fontWeight: "500" }}>Chat with Bot</span>
           </div>
           <Card style={{ backgroundColor: "white", width: "70%" }}>
             <Card.Body style={{ position: "relative", display: "flex", flexDirection: "column" }}>
               {/* Chat messages go here */}
-              {/* Added chat messages here */}
-              <div
-                style={{
-                  backgroundColor: "#479BFF",
-                  padding: "10px",
-                  borderRadius: "10px",
-                  marginBottom: "10px",
-                  alignSelf: "flex-start",
-                  width: "400px",
-                }}
-              >
-                This is a received message
-              </div>
-              <div
-                style={{
-                  backgroundColor: "#F0F0F0",
-                  padding: "10px",
-                  borderRadius: "10px",
-                  marginBottom: "10px",
-                  alignSelf: "flex-end",
-                  width: "400px",
-                  float: "right",
-                }}
-              >
-                This is a sent message
-              </div>
+              {response.map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    backgroundColor: item.type === 'sent' ? "#F0F0F0" : "#479BFF",
+                    color: item.type === 'sent' ? "black" : "white",
+                    padding: "10px",
+                    borderRadius: "10px",
+                    marginBottom: "10px",
+                    alignSelf: item.type === 'sent' ? "flex-end" : "flex-start",
+                    width: "400px",
+                    float: item.type === 'sent' ? "right" : "left",
+                  }}
+                >
+                  {item.message}
+                </div>
+              ))}
               {/* More chat messages can be added here */}
               <div
                 style={{
@@ -90,27 +99,39 @@ const ChatBot = () => {
                       type="text"
                       placeholder="Enter a prompt here..."
                       style={{
-                        width: "calc(100% - 120px)",
+                        width: "calc(100% - 111px)",
                         padding: "10px",
                         border: "none",
                         borderRadius: "10px",
                         paddingRight: "40px",
                         cursor: "text",
-                        backgroundImage: 'url("chatbot_images/pointer_icon.png")',
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "right 10px center",
-                        backgroundSize: "22px 22px",
                         outline: "none",
                       }}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     />
+                   
                     <div
                       style={{
                         position: "absolute",
                         top: "50%",
                         transform: "translateY(-50%)",
                         right: "10px",
+                        cursor: "pointer", // Set cursor to pointer
                       }}
+                       // This onClick handler is for the pointer icon
                     >
+                      <img
+                        src="chatbot_images/pointer_icon.png"
+                        alt="Documents"
+                        style={{
+                          width: "24px",
+                          height: "24px",
+                          marginRight: "12px",
+                          cursor: "pointer",
+                        }}
+                        onClick={sendMessage}
+                      />
                       <img
                         src="chatbot_images/paperClip_icon.png"
                         alt="Documents"
@@ -132,8 +153,8 @@ const ChatBot = () => {
                         }}
                       />
                       <img
-                        src="chatbot_images/microphone_icon.png"
-                        alt="Microphone"
+                        src="chatbot_images/microphone_icon.png" // This is the pointer icon
+                        alt="Pointer"
                         style={{
                           width: "24px",
                           height: "24px",
