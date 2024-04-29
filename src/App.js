@@ -9,10 +9,11 @@ import ChatWAdvct from "./components/advocatesChat/chatwithAvct";
 import UserChat from "./components/user chat/userchat";
 import Home from "./Pages/Home";
 import Cardpg from "./Pages/Cardpg";
+import DashBoard from "./components/DashBoard/DashBoard";
 function App() {
   return (
     <>
- {/* <Routes>
+ <Routes>
     <Route path="/" element={ <Home />} />
     <Route path="cardpg" element={ <Cardpg/>} />  
     <Route path='/signIn' element={<SignIN/>}/>
@@ -21,9 +22,10 @@ function App() {
     <Route path="/othersDetails" element={<OthersDetails/>}/>
     <Route path='/assignment' element={<Assignment/>}/>
     <Route path='/chatwithAvct' element={<ChatWAdvct/>} />
+    <Route path="/DashBoard" element={<DashBoard/>}/>
    
-</Routes>   */}
-{ <UserChat/>  }
+</Routes>  
+
     </>
   )
 }

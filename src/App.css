@@ -1,0 +1,90 @@
+.container {
+  width: 1463px;
+  height: 451px;
+  top: 194px;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px ;
+  background: linear-gradient(248.8deg, #4EFBC1 -35.03%, rgba(255, 255, 255, 0) 200.52%);
+
+  
+}
+.bigdiv{
+  width: 1566px;
+height: 451px;
+
+
+
+}
+
+.image {
+  width: 100%;
+  max-width: 633px;
+  height: auto;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  color: #333; /* Adjust text color */
+}
+
+.h1 {
+  font-family: Ubuntu;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 57.45px;
+  text-align: left;
+}
+
+.h2 {
+  font-family: Inter;
+  font-size: 20.38px;
+  font-weight: 400;
+  line-height: 24.67px;
+  text-align: left;
+  color: #1e1e1e;
+}
+
+.button {
+  width: 100%;
+  max-width: 194.11px;
+  height: 67px;
+  border-radius: 20px;
+  background: #1e1e1e;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36.77px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .content {
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    max-width: none;
+    margin-top: 20px;
+  }
+}
