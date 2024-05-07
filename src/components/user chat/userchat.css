@@ -85,13 +85,13 @@
     background-color: #BADAFF;
     width: 100%;
 }
-.chat_type_section input{
+.chat_type_section textarea{
     border-radius: 10px;
-    width: 63rem;
-    border: 0;
+    width: 60rem;
     margin-right: 1rem;
     left: 0;
-    padding:10px;
+    padding-top:10px;
+    border: none;
 }
 .chat_input::placeholder{
     width: max-content;
