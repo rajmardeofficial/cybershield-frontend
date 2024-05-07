@@ -1,0 +1,81 @@
+.image-7-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 4.78px;
+    width: 95.7px;
+    height: 80.3px;
+    object-fit: cover;
+  }
+  .am,
+  .by-aditya-chine,
+  .div {
+    position: absolute;
+   
+    font-weight: 300;
+  }
+  .am,
+  .by-aditya-chine {
+    left: 230.6px;
+  }
+  .by-aditya-chine {
+    left: 319.5px;
+  }
+  .us-court-orders {
+    position: absolute;
+    bottom: 36.3px;
+    left: 117.7px;
+    font-size: var(--font-size-lgi-1);
+    font-weight: 500;
+    display: inline-block;
+    width: 390.3px;
+  }
+  .image-7-parent {
+    position: absolute;
+    bottom: 21.1px;
+    left: 5.7px;
+    width: 507.9px;
+    height: 80.3px;
+  }
+  .arrow-drop-down-big-icon1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+  .k {
+    position: absolute;
+    top: 9.8px;
+    left: 42.7px;
+  }
+  .arrow-drop-down-big-parent {
+    position: absolute;
+    top: 16px;
+    left: 535px;
+    width: 102.7px;
+    height: 48px;
+    font-size: var(--font-size-5xl-9);
+  }
+  .line-div {
+    position: absolute;
+    top: 101.4px;
+    left: 0;
+    border-top: 1px solid var(--color-gray);
+    box-sizing: border-box;
+    width: 661px;
+    height: 1px;
+  }
+  .group-parent1 {
+    position: absolute;
+    bottom: 702px;
+    left: 0;
+    width: 660px;
+    height: 101.4px;
+    text-align: left;
+    font-size: var(--font-size-mid-2);
+    color: var(--color-gray);
+    font-family: var(--font-ubuntu);
+  }
+  

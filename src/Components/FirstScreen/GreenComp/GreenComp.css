@@ -1,0 +1,243 @@
+/* .greenApp {
+    width: 1463px;
+    height: 451px;
+    border-radius: 20px;
+    background: linear-gradient(248.8deg, #4EFBC1 -35.03%, rgba(255, 255, 255, 0) 200.52%);
+    margin-right: 3%;
+    
+  }
+  
+  .greenimage {
+    width: 633px;
+    height: 422px;
+  }
+  
+  .greenheading {
+    font-family: Ubuntu;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 57.45px;
+    text-align: left;
+  }
+  
+  .greenbigdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1566px;
+    height: 451px;
+    top: 194px;
+    left: 30px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .greencontent {
+    font-family: Inter;
+    font-size: 20.38px;
+    font-weight: 400;
+    line-height: 24.67px;
+    text-align: left;
+    margin-right: 4%;
+  }
+  
+  .greenbutton {
+    width: 194.11px;
+    height: 67px;
+    border-radius: 20px;
+    background: #1e1e1e;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36.77px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+   */
+
+   .image-2-icon {
+    height: 422px;
+    width: 633px;
+    position: absolute;
+    margin: 0 !important;
+    bottom: 0;
+    left: -103px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .cyber-tip-of,
+  .frame-item {
+    position: relative;
+    max-width: 100%;
+  }
+  .frame-item {
+    width: 1463px;
+    height: 451px;
+    border-radius: 20px;
+    background: linear-gradient(248.8deg, #4efbc1, rgba(255, 255, 255, 0));
+    display: none;
+  }
+  .cyber-tip-of {
+    margin: 0;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+    display: inline-block;
+    z-index: 2;
+  }
+  .cyber-tip-of1,
+  .in-todays-digital {
+    margin: 0;
+  }
+  .cyber-tip-of-container {
+    align-self: stretch;
+    position: relative;
+    z-index: 0;
+  }
+  .button-child {
+    height: 67px;
+    width: 194px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    display: none;
+  }
+  .chat-now {
+    position: relative;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Ubuntu;
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: 15px 24px 15px 25px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .button:hover {
+    background-color: #525252;
+  }
+  .cyber-tip-of-the-day-secure-y-parent,
+  .rectangle-group {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .cyber-tip-of-the-day-secure-y-parent {
+    align-self: stretch;
+    gap: 28px;
+    font-size: 20.4px;
+    font-family: Inter;
+  }
+  .rectangle-group {
+    flex: 1;
+    border-radius: 20px;
+    background: linear-gradient(248.8deg, #4efbc1, rgba(255, 255, 255, 0));
+    padding: 37px 64.3px 27px 472px;
+    box-sizing: border-box;
+    gap: 35px;
+    max-width: 100%;
+  }
+  .frame-container,
+  .image-2-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .image-2-parent {
+    flex: 1;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .frame-container {
+    align-self: stretch;
+    justify-content: flex-end;
+    padding: 0 77px 0 78px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 50px;
+    color: #1e1e1e;
+    font-family: Ubuntu;
+  }
+  @media screen and (max-width: 1275px) {
+    .frame-container,
+    .rectangle-group {
+      padding-left: 236px;
+      padding-right: 32px;
+      box-sizing: border-box;
+    }
+    .frame-container {
+      padding-left: 39px;
+      padding-right: 38px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .cyber-tip-of {
+      font-size: 40px;
+    }
+    .rectangle-group {
+      gap: 17px 35px;
+      padding-left: 118px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .cyber-tip-of {
+      font-size: 30px;
+    }
+    .cyber-tip-of-container {
+      font-size: 16px;
+    }
+    .rectangle-group {
+      padding-left: 20px;
+      padding-top: 24px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1275px) {
+    .image-2-icon {
+      width: 300px; /* Adjust width as needed */
+      left: -65px; /* Adjust left position */
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cyber-tip-of {
+      font-size: 40px;
+    }
+    .rectangle-group {
+      gap: 17px 35px;
+      padding-left: 40px; /* Adjust padding as needed */
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .cyber-tip-of {
+      font-size: 30px;
+    }
+    .cyber-tip-of-container {
+      font-size: 16px;
+    }
+    .rectangle-group {
+      padding-left: 20px;
+      padding-top: 24px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  

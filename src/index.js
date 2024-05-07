@@ -6,10 +6,12 @@ import { BrowserRouter } from "react-router-dom";
 // import reportWebVitals from "./reportWebVitals";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css'
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <App />
+  
   </BrowserRouter>
 );
 
