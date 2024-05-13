@@ -212,6 +212,22 @@ text-align: left;
 color: #FFFFFF;
 }
 
+.errorMessage{
+  position: absolute;
+   background-color: rgba(205, 70, 70, 0.482); 
+   width: 18%;
+   left: 26vw;
+   top:75vh;
+   margin: auto;
+   padding: 1rem;
+   border-radius: 10px;
+   color: #a51919;
+   box-shadow: 1px 1px grey;
+   font-weight: bold;
+   font-size: medium;
+   border:3px 3px 3px 3px;
+  border-color: #420202;
+}
 @media (max-width: 700px )  {
   /* Adjust styles for smaller screens */
   .custom-size3 {   

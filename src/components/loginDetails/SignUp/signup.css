@@ -2,10 +2,10 @@
 
 .main_section{
     width: 64.688rem;
-    height: 44.563rem;
+    height: 49.563rem;
     position: relative;
     top: 5.625rem;
-   left: 21.688rem;
+   left: 25%;
     gap: 0px;
     border-radius: 25px ;
     opacity: 0px;
@@ -16,7 +16,7 @@
 
 .signIn_part{
     width: 32.344rem;
-    height: 44.563rem;
+    height: 49.563rem;
     gap: 0px;
     border-radius: 25px 0px 0px 25px;
     opacity: 0px;
@@ -110,6 +110,7 @@ position:absolute;
 }
 
 .input_phone,
+.input_email,
 .input_name,
 .input3,
 .input4{
@@ -126,16 +127,46 @@ left: 4rem;
 .input_name{
 top: 9.813rem;
 }
-.input_phone{
+.input_email{
  top:15.75rem;
+ position: relative;
+}
+.input_phone{
+ top:25.75rem;
+ position: relative;
 }
 .input3{
-   top: 21.688rem;
+   top: 22.688rem;
 }
 .input4{
-top:27.625rem;
+top:35.625rem;
 }
 
+.bt_otp_verify{
+position: absolute;
+top: 59%;
+width:40%;
+left:7%;
+background: transparent;
+color: #121b266b;
+}
+
+.bt_email_verify{
+position: absolute;
+top: 44%;
+width:40%;
+left:7%;
+background: transparent;
+color: #121b266b;
+}
+.bt_otp_verify:hover,.bt_email_verify:hover{
+color: #000000;
+}
+
+.checkMark{
+   position: absolute;
+    top: 54%; 
+}
 
 input::placeholder{
     left:5.063rem;
@@ -155,7 +186,7 @@ padding-left: 10px;
 .character_pass_signup{
     width: 11.875rem;
 height: 1.438rem;
-top:32.625rem;
+top:40.625rem;
 left: 4.688rem;
 gap: 0px;
 opacity: 0px;
@@ -171,7 +202,7 @@ position: absolute;
 .signupBt{
     width: 11.625rem;
     height: 3.563rem;
-    top: 36.625rem;
+    top: 42.625rem;
     left:10.75rem;
     gap: 0px;
     border-radius: 10px;
@@ -231,7 +262,7 @@ position: absolute;
        }
        .input3,
        .input_phone,
-       .input_name, .input4{
+       .input_name, .input_email,.input4{
          width: 220.98px;
        height: 35.17px;
        left: 41.83px;
@@ -247,19 +278,25 @@ position: absolute;
         top: 9.813rem;
         }
         .input_phone{
-         top:13.75rem;
+         top:22.75rem;
+        }
+        .input_email{
+           top:13.75rem; 
         }
         .input3{
            top: 17.688rem;
         }
         .input4{
-        top:21.625rem;
+        top:26.625rem;
         }
-
+.bt_otp_verify{
+    top:20rem;
+    width: max-content;
+}
         .character_pass_signup{
             width: 132px;
           height: 16px;
-          top: 340.33px;
+          top: 83%;
           left: 41.83px;
           gap: 0px;
           opacity: 0px;
@@ -276,7 +313,7 @@ position: absolute;
             display: block;
             width: 99.24px;
             height: 29.61px;
-            top: 378px;
+            top: 88%;
             left: 149px;
             gap: 0px;
             border-radius: 5.94px ;
@@ -297,7 +334,7 @@ position: absolute;
           .signupBt{
             width: 94.24px;
             height: 29.61px;
-            top: 378px;
+            top: 88%;
             left: 41.83px;
             gap: 0px;
             border-radius: 5.94px;
