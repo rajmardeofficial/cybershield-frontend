@@ -13,8 +13,10 @@ function NavBarComp() {
   }, []);
 
   const handlelogout = async() => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("userId")
+    // localStorage.removeItem("token");
+    // localStorage.removeItem("userId")
+    // localStorage.removeItem("username");
+    localStorage.clear()
     setAccess("")
   }
   return (

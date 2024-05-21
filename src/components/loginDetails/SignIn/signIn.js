@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./signin.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+
 import {
   Dimmer,
   Loader,
@@ -11,7 +12,8 @@ const SignIN = () => {
   const [email, setEmail] = useState();
   const [password, setpassword] = useState();
   const [loader, setLoader] = useState(false);
-  const [Error,setError]=useState(false)
+  const [Error, setError] = useState(false)
+ 
   const handleNavtoSignUp = () => {
     nav("/SignUp");
   };
@@ -21,19 +23,23 @@ const SignIN = () => {
     }
     try {
       if (email && password) {
-        const res = await axios.post("http://localhost:8000/user/login", {
+        const {data} = await axios.post("http://localhost:8000/user/login", {
           email,
           password,
         });
-        if (res) {
-          const token = res.data.result.token;
+        if (data) {
+          const token = data.result.token;
           localStorage.setItem("token", token);
-          const userdata = res.data.result.userValid.fname;
-          localStorage.setItem("userId", userdata);
-          console.log(res);
+          const userdata = data.result.userValid.fname;
+          const userId = data.result.userValid._id;
+          localStorage.setItem( "username", userdata);
+          localStorage.setItem("userInfo", JSON.stringify(data));
+          
+          localStorage.setItem("userId", userId);
+          console.log(data);
           setLoader(true);
           nav("/");
-        } else if(res==null) {
+        } else if(data==null) {
            setError(true);
         }
       }
